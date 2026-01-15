@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards & Honors | Patrick Ken Kalonde</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #d4af37; /* Gold */
+            --success: #27ae60;
+            --light: #f9f9f9;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { color: var(--success); }
+
+        /* Hero Banner with Medal Background */
+        .awards-hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('../graphics/medal.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container { max-width: 900px; margin: -40px auto 60px; padding: 0 20px; }
+
+        .awards-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .award-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent);
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .award-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .award-year {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: var(--primary);
+            min-width: 90px;
+            background: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .award-content h3 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+
+        .award-content p {
+            margin: 10px 0 0;
+            color: #555;
+        }
+
+        .organization {
+            font-weight: bold;
+            color: var(--success);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .special-note {
+            background: #fff9e6;
+            border: 1px dashed var(--accent);
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #856404;
+        }
+
+        footer { text-align: center; padding: 40px; background: var(--primary); color: white; margin-top: 60px; }
+
+        @media (max-width: 600px) {
+            .award-card { flex-direction: column; text-align: center; }
+            .award-year { min-width: auto; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="community.html">Community</a>
+            <a href="awards.html">Awards</a>
+        </nav>
+    </header>
+
+    <section class="awards-hero">
+        <h1>Honors & Recognitions</h1>
+        <p>A journey of excellence in Geospatial Science and Leadership.</p>
+    </section>
+
+    <div class="container">
+        
+        <div class="awards-list">
+        
+
+            <div class="award-card">
+                <div class="award-year">2023</div>
+                <div class="award-content">
+                    <h3>Hamish Ogston Early Career Grant</h3>
+                    <span class="organization">Malawi Liverpool Wellcome Research Programme</span>
+                    <p>Awarded for innovative research on improving disease surveillance by solving the population denominator problem through spatial analytics.</p>
+                </div>
+            </div>
+
+            <div class="award-card">
+                <div class="award-year">2022</div>
+                <div class="award-content">
+                    <h3>Excellence in Leadership Award</h3>
+                    <span class="organization">St. Cloud State University, USA</span>
+                    <p>Recognized for academic excellence and outstanding contributions in promoting youth leadership for environmental sustainability across Africa.</p>
+                </div>
+            </div>
+
+            <div class="award-card">
+                <div class="award-year">2021</div>
+                <div class="award-content">
+                    <h3>Copernicus Masters Award</h3>
+                    <span class="organization">European Space Agency (ESA) / AZO</span>
+                    <p>In recognition of pioneering Earth Observation (EO) techniques for monitoring carbon offsetting through forests.</p>
+                    <div class="special-note">
+                        ★ First time this prestigious award has been presented to an African team.
+                    </div>
+                </div>
+            </div>
+
+            <div class="award-card">
+                <div class="award-year">2021</div>
+                <div class="award-content">
+                    <h3>Impact Grant</h3>
+                    <span class="organization">Humanitarian OpenStreetMap Team</span>
+                    <p>Received funding to support mapping of all physical infrastructure in two flood prone districts in Souther Malawi.</p>
+                </div>
+            </div>
+
+            <div class="award-card">
+                <div class="award-year">2019</div>
+                <div class="award-content">
+                    <h3>Fulbright Scholar</h3>
+                    <span class="organization">U.S. Department of State</span>
+                    <p>Selected for the prestigious Fulbright Scholarship to pursue graduate studies in the United States, focusing on Geospatial Information Systems and Global Development.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Patrick Ken Kalonde | Honors & Awards | © 2026</p>
+    </footer>
+
+</body>
+</html>

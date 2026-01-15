@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | Patrick Ken Kalonde</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #27ae60;
+            --light: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero Banner with SotM Background */
+        .hero-banner {
+            background: linear-gradient(rgba(39, 174, 96, 0.85), rgba(44, 62, 80, 0.85)), 
+                        url('../graphics/sotm.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-banner h1 { font-size: 2.5rem; margin: 0; }
+
+        .container { max-width: 950px; margin: 40px auto; padding: 0 20px; }
+
+        .community-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 8px solid var(--primary);
+            transition: 0.3s ease;
+        }
+        
+        .community-card:hover {
+            border-left-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .community-card h2 { color: var(--accent); margin-top: 0; }
+        .role-tag {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .appointment-note {
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #eee;
+            margin-top: 20px;
+            padding-top: 15px;
+            font-style: italic;
+        }
+
+        footer { text-align: center; padding: 40px; background: var(--primary); color: white; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="community.html">Community</a>
+            <a href="awards.html">Awards</a>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h1>Community Leadership</h1>
+        <p>Championing open data and youth-led environmental action in Malawi.</p>
+    </section>
+
+    <div class="container">
+        
+        <div class="community-card">
+            <span class="role-tag">TEAM LEADER</span>
+            <h2>OpenStreetMap Malawi</h2>
+            <p>I serve as one of the three co-founding members of the board and currently lead the team at <strong>OpenStreetMap (OSM) Malawi</strong>. Since 2024, I have helped to organize State of the Map conferences and GIS conferences; notably, these were the first events of their kind to be held in Malawi.</p>
+        </div>
+
+        <div class="community-card">
+            <span class="role-tag">ENVIRONMENTAL ADVOCACY</span>
+            <h2>Youth for Environmental Development (YED)</h2>
+            <p>I actively work with <strong>Youth for Environmental Development</strong>, an initiative focused on mobilizing young Malawians to take the lead in environmental conservation and sustainable development.</p>
+        </div>
+
+        <div class="community-card">
+            <span class="role-tag">MENTOR</span>
+            <h2>Technical Mentorship</h2>
+            <p>I am dedicated to training the next generation of global leaders, with a specific focus on those with interests in science and community development. I believe in fostering talent that can bridge the gap between technical expertise and social impact.</p>
+            <p class="appointment-note">
+                Interested in being mentored? Please book an appointment first to discuss your goals. Further details on scheduling will be shared here soon.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Patrick Ken Kalonde | Community & Environment | © 2026</p>
+    </footer>
+
+</body>
+</html>

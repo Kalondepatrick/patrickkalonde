@@ -1,8 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Ken Kalonde | Geospatial Impact</title>
+    <style>
+        :root {
+            --primary: #2c3e50; /* Deep Slate */
+            --accent: #27ae60;  /* Growth Green */
+            --light: #f4f7f6;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section with your specific cover image */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.75), rgba(44, 62, 80, 0.75)), 
+                        url('graphics/cover.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            min-height: 300px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin: 20px auto; }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--primary); margin-top: 0; font-size: 1.3rem; }
+
+        .innovation-block {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 50px;
+            border-left: 10px solid var(--accent);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .innovation-text h2 { color: var(--primary); margin-top: 0; }
+        .innovation-text strong { color: var(--accent); }
+
+        .footer {
+            text-align: center;
+            padding: 50px 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #219150; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .innovation-block { padding: 25px; }
+        }
+    </style>
+</head>
 <body>
 
-<h1>My website</h1>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="static/research.html">Research</a>
+            <a href="static/portfolio.html">Portfolio</a>
+            <a href="static/community.html">Community</a>
+            <a href="static/awards.html">Awards</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Patrick Ken Kalonde</h1>
+        <p><strong>Transforming Geospatial Theory into National Impact</strong><br>
+        PhD Researcher | Geospatial Data Scientist | Entrepreneur</p>
+        <a href="static/portfolio.html" class="btn">Explore Impact Portfolio</a>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">Bridging the Gap</h2>
+            <p style="text-align: center; max-width: 850px; margin: 0 auto; font-size: 1.1rem;">
+                I am a PhD Researcher at the <strong>Liverpool School of Tropical Medicine</strong> and a <strong>Fulbright Scholar</strong>. 
+                My mission is to move Malawi beyond theoretical GIS toward a future of precision targeting. By integrating Earth Observation with ground-level community needs, I work to minimize resource waste and maximize intervention impact.
+            </p>
+        </section>
+
+        <div class="pillars">
+            <div class="card">
+                <h3>Scientific Research</h3>
+                <p>Leading the way as a top-published researcher in the Malawian geospatial community. Work featured in <em>Nature Communications Medicine</em>.</p>
+            </div>
+            <div class="card">
+                <h3>Geospatial Consultancy</h3>
+                <p>Expert spatial support for global organizations, including the <strong>United Nations</strong> and <strong>Welthungerhilfe</strong>.</p>
+            </div>
+            <div class="card image-card">
+                <h3>Community Leadership</h3>
+                <p>Co-Founder of <strong>OpenStreetMap Malawi</strong>. Building the human infrastructure for Malawi's digital future.</p>
+            </div>
+        </div>
+
+        <div class="innovation-block">
+            <div class="innovation-text">
+                <h2>Rural Development & Innovation</h2>
+                <p>As the <strong>Founder of Creative Farms</strong>, I am pioneering the use of Earth Observation in Agriculture. We support smallholder African farmers by providing data-driven insights to improve productivity and build climate resilience.</p>
+                <a href="https://web.facebook.com/profile.php?id=61556595454646" style="color: var(--accent); font-weight: bold; text-decoration: none;">Explore Creative Farms Projects &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Patrick Ken Kalonde</strong><br>
+        Email: kalondepatrick@gmail.com | Tel: +265 882 266 223</p>
+        <p style="opacity: 0.7; font-size: 0.9rem;">&copy; 2026 Blantyre, Malawi.</p>
+    </div>
 
 </body>
 </html>

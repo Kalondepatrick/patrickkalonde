@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Patrick Ken Kalonde</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #27ae60;
+            --light: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+
+        /* Research Hero Header with your image */
+        .research-hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('../graphics/research.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .container { max-width: 1000px; margin: -50px auto 40px; padding: 0 20px; position: relative; }
+        
+        .intro-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .intro-card p { font-size: 1.15rem; color: #555; }
+
+        .pub-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .pub-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .pub-card:hover { transform: translateX(10px); }
+
+        .pub-title { color: var(--primary); font-size: 1.25rem; font-weight: bold; margin-bottom: 8px; display: block; }
+        .pub-journal { color: var(--accent); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        .pub-link { 
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .pub-link:hover { color: var(--accent); }
+
+        .phd-tag {
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        footer { text-align: center; padding: 40px; background: var(--primary); color: white; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="community.html">Community</a>
+            <a href="awards.html">Awards</a>
+        </nav>
+    </header>
+
+    <section class="research-hero">
+        <h1>Scientific Research & Inquiry</h1>
+    </section>
+
+    <div class="container">
+        <div class="intro-card">
+            <p>
+                I am interested in answering questions that are important to doing things better. I address these questions through research I am currently pioneering, which leverages <strong>Remote Sensing</strong> and <strong>Machine Learning</strong> to optimize environmental and health interventions.
+            </p>
+            <p>
+                Beyond my personal research, I co-lead an <strong>informal geospatial unit</strong>, a collaborative group of geospatial researchers at the <strong>Malawi Liverpool Wellcome Research Programme</strong> dedicated to advancing spatial data science in the region.
+            </p>
+        </div>
+
+        <h2 style="color: var(--primary); margin-bottom: 25px;">Selected Publications</h2>
+        
+        <div class="pub-grid">
+            <div class="pub-card">
+                <div class="phd-tag">LATEST RESEARCH</div>
+                <span class="pub-journal">Communications Medicine (Nature)</span>
+                <span class="pub-title">Mapping and Quantifying Travel Time to Define Health Facility Catchment Areas in Blantyre City in Malawi</span>
+                <p>Establishing precision metrics for health accessibility to ensure resources reach those furthest from care.</p>
+                <a href="https://doi.org/10.1038/s43856-025-00845-3" target="_blank" class="pub-link">VIEW FULL PAPER →</a>
+            </div>
+
+            <div class="pub-card">
+                <span class="pub-journal">Environmental Monitoring and Assessment</span>
+                <span class="pub-title">Mapping Waste Piles in an Urban Environment Using Ground Surveys and Object-Based Image Classification</span>
+                <p>Using drone imagery and machine learning to monitor environmental hazards and direct sanitation interventions.</p>
+                <a href="https://doi.org/10.1007/s10661-025-13675-6" target="_blank" class="pub-link">VIEW FULL PAPER →</a>
+            </div>
+
+            <div class="pub-card">
+                <span class="pub-journal">African Geographical Review</span>
+                <span class="pub-title">Reflections on the First State of the Map Conference in Malawi</span>
+                <p>Analyzing the growth of open-source geospatial capacity and its role in national development.</p>
+                <a href="https://doi.org/10.1080/19376812.2025.2498388" target="_blank" class="pub-link">VIEW FULL PAPER →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Patrick Ken Kalonde | PhD Researcher | © 2026</p>
+    </footer>
+
+</body>
+</html>

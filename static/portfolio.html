@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Patrick Ken Kalonde</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #27ae60;
+            --light: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav { display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+
+        /* Hero Header with Parliament Background */
+        .portfolio-hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), 
+                        url('../graphics/parliament.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container { max-width: 1100px; margin: -30px auto 40px; padding: 0 20px; position: relative; }
+
+        .section-header {
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            color: var(--primary);
+            background: var(--light);
+        }
+
+        /* Status Badges */
+        .status-badge {
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .status-complete { background: #e8f5e9; color: #2e7d32; border: 1px solid #2e7d32; }
+        .status-progress { background: #fffde7; color: #f57f17; border: 1px solid #f57f17; }
+
+        /* Project Cards */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .project-card {
+            background: white;
+            display: flex;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .project-info { padding: 40px; flex: 3; }
+        .project-meta { background: var(--primary); color: white; padding: 40px; flex: 1.2; display: flex; flex-direction: column; justify-content: center; }
+
+        .project-card h3 { color: var(--accent); margin-top: 0; font-size: 1.5rem; }
+        .project-meta span { display: block; margin-bottom: 5px; font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; }
+        .project-meta strong { color: var(--accent); margin-bottom: 20px; display: block; line-height: 1.2; }
+
+        @media (max-width: 768px) {
+            .project-card { flex-direction: column; }
+            .project-meta { order: 2; padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="community.html">Community</a>
+            <a href="awards.html">Awards</a>
+        </nav>
+    </header>
+
+    <section class="portfolio-hero">
+        <h1>Geospatial Contributions & Impact</h1>
+        <p>Turning spatial data into national strategy for strenghtening community resilience.</p>
+    </section>
+
+    <div class="container">
+        <div class="project-grid">
+            
+            <div class="project-card" id="creative-farms">
+                <div class="project-info">
+                    <span class="status-badge status-progress">In Progress</span>
+                    <h3>Creative Farms: EO in Agriculture</h3>
+                    <p>Pioneering the use of Earth Observation (EO) technology to support rural development. Creative Farms provides data-driven insights to local smallholder African farms to improve productivity and build climate resilience.</p>
+                </div>
+                <div class="project-meta">
+                    <span>Lead Partner</span><strong>Swiss Water Partnership</strong>
+                    <span>Focus</span><strong>Precision Agriculture</strong>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="status-badge status-complete">Completed</span>
+                    <h3>National Health Catchment Stratification</h3>
+                    <p>Led the updating of proxy national catchment areas of health facilities using advanced geospatial techniques for the <strong>National Malaria Control Program</strong>.</p>
+                </div>
+                <div class="project-meta">
+                    <span>Partner</span><strong>Malawi Liverpool Wellcome</strong>
+                    <span>Tools</span><strong>GIS, Geostatistics</strong>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="status-badge status-complete">Completed</span>
+                    <h3>Drone-Based Surface Water Identification</h3>
+                    <p>Organized and processed drone and satellite data using machine learning to identify surface water for disease vector control interventions.</p>
+                </div>
+                <div class="project-meta">
+                    <span>Partner</span><strong>MLW / ADDA</strong>
+                    <span>Tools</span><strong>UAVs, Machine Learning</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px; background: #2c3e50; color: white; margin-top: 60px;">
+        <p>Patrick Ken Kalonde | Portfolio | © 2026</p>
+    </footer>
+
+</body>
+</html>
